@@ -1,0 +1,105 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+
+<body>
+<h2 align=center><font color="#CFCFCF"><del>肥料</del></font> 卡片養成計算☆　測試版</h2>
+
+
+
+
+<script type="text/javascript" src="beta-1js.js">
+</script>
+
+<br>
+
+素材卡養成可直接參照 <a href="https://www.ptt.cc/bbs/MysticWiz/M.1448727072.A.1FB.html"> 素材卡作肥料經驗表</a><br>
+詳細說明請參照： <a href="https://www.ptt.cc/bbs/MysticWiz/M.1427615020.A.DFF.html">PTT 《MysticWiz》 - 廢卡堆肥教學、堆肥概念說明</a>
+
+
+<br>
+　　　　　　　　　　<font color="#A86E00">↑參照 1.先找出肥料卡每升一級能提供的經驗值</font> 
+<br>
+Rank
+<select id="a" name="a"><option value="C">C</option><option value="C+">C+</option><option value="B">B</option><option value="B+">B+</option><option value="A">A</option><option value ="A+">A+</option><option value="S">S</option><option value="S+">S+</option><option value="SS">SS</option></select>
+
+，卡片等級1提供的經驗值：
+<input onkeyup="value=value.replace(/[^\d]/g,'') " 
+　　 onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+　　 ID="b" NAME="b"><b><font color="#F00000">　請用餵給同色卡的經驗值</font></b>
+
+
+
+
+<p><input onclick="DisplayFunc()" type="button" value="計算" /></p>
+
+
+
+
+<hr>
+
+<br>
+
+　餵食<input id="veat" type="text" name="veat" readonly="readonly" size="10" value="" />
+,達到RANK<input id="vrank" type="text" name="vrank" readonly="readonly" size="10" value="" />
+,可獲得經驗值<input id="vexp" type="text" name="vexp" readonly="readonly" size="10" value="" />
+,Add值<input id="vcp" type="text" name="vcp" readonly="readonly" size="10" value="" /></p>
+
+
+　餵食<input id="xeat" type="text" name="xeat" readonly="readonly" size="10" value="" />
+,達到RANK<input id="xrank" type="text" name="xrank" readonly="readonly" size="10" value="" />
+,可獲得經驗值<input id="xexp" type="text" name="xexp" readonly="readonly" size="10" value="" />
+,Add值<input id="xcp" type="text" name="xcp" readonly="readonly" size="10" value="" /></p>
+
+
+
+◎餵食<input id="yeat" type="text" name="yeat" readonly="readonly" size="10" value="" />
+,達到RANK<input id="yrank" type="text" name="yrank" readonly="readonly" size="10" value="" />
+,可獲得經驗值<input id="yexp" type="text" name="yexp" readonly="readonly" size="10" value="" />
+,Add值<input id="ycp" type="text" name="ycp" readonly="readonly" size="10" value="" />　<span style="font-size: large; background-color: #ffff00;">預定最佳等級</span><span style="font-size: large;color: #F00000;"><b>(參考用)</b></span></p>
+
+
+
+　餵食<input id="zeat" type="text" name="zeat" readonly="readonly" size="10" value="" />
+,達到RANK<input id="zrank" type="text" name="zrank" readonly="readonly" size="10" value="" />
+,可獲得經驗值<input id="zexp" type="text" name="zexp" readonly="readonly" size="10" value="" />
+,Add值<input id="zcp" type="text" name="zcp" readonly="readonly" size="10" value="" /></p>
+
+
+
+　注意：<br>
+
+　　　　<font color="#F00000">"可獲得經驗值"</font>及<font color="#F00000">"Add值"</font>皆是理想情況下的推論值，和實際值可能存在誤差
+<br>
+　　　　<font color="#F00000">"Add值"</font>概念基本上就是CP值，是淨賺回來的推論值
+<br>
+　　　　因為程式寫得簡單的緣故，有可能<span style="font-size: large; background-color: #ffff00;">預定最佳等級</span>的<font color="#F00000">"Add值"</font>並不是最高的<br>
+
+　　　　另外實際上餵食經驗值很難剛好，多餵的經驗值是直接浪費掉<br>
+
+　　　　也有餵到最佳等級但比上一級多拿到的經驗值才多 1，像是C+卡，LV.1提供經驗38的情況<br>
+
+　　　　所以<span style="font-size: large; background-color: #ffff00;">預定最佳等級</span>只是<span style="font-size: large;color: #F00000;"><b>參考用</b></span>，請視情況選擇Add值最高或次高或次次高的
+
+<br>
+<br>
+<hr>
+
+
+有BUG、問題，聯絡請至 telnet://ptt.cc ID:SINNERSINNER <br>
+或是：sinfors14@gmail.com 
+
+<br>
+<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br />本網頁程式碼係採用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">創用 CC 姓名標示-非商業性 4.0 國際 授權條款</a>授權.
+
+
+
+
+
+
+
+</body>
+</html>
